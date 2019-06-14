@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        //1.当整个HTML文档完全加载成功后触发window。onload事件
+        //事件触发时，执行function里面
+        window.onload=function () {
+            //2.获取所有的button节点
+            var btn = document.getElementsByTagName("button")[0];
+            //3.为button的Onclink事件赋值:当点击button时，执行函数体
+            btn.onclick = function () {
+                //4.弹出hello world
+                alert("hellworld");
+            };
+
+        }
+
+    </script>
+</head>
+<body>
+
+<button>ClinkMe</button>
+
+</body>
+</html>

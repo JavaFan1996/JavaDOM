@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--    /1.获取button-->
+<!--    //文档还没被全部加载，就只能是0-->
+<!--    var btn = document.getElementsByTagName("button");-->
+<!--    alert(btn.length);-->
+<!--    btn[0].onclick =function () {-->
+<!--    alert("helloworld");-->
+<!--    }-->
+</head>
+<body>
+<button>ClinkMe</button>
+
+</body>
+</html>
+<script type="text/javascript">
+    //1.获取button
+    //2.在文档加载完
+    //3.不符合写JS的代码习惯
+    var btn = document.getElementsByTagName("button");
+    alert(btn.length);
+    btn[0].onclick =function () {
+        alert("helloworld");
+    }
+</script>
