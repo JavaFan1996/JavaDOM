@@ -5,22 +5,33 @@
     <title>Title</title>
     <script type="text/javascript">
         window.onload = function () {
-            var nameNode = document.getElementById("nameid");
-            alert(nameNode.value);
-
-            nameNode.value="尚硅谷"
-
-
+            //1.获取city节点的所有子节点
+            var cityNOde = document.getElementById("city");
+            // //2.该方法不实用
+            // alert(cityNOde.childNodes.length);
 
 
-                }
+            //3.获取所有city节点的所有li节点
+
+            var cityLiNodes = cityNOde.getElementsByTagName("li");
+            alert(cityLiNodes.length)
+
+            alert(cityNOde.firstChild);
+            alert(cityNOde.lastChild);
+
+
+
+
+
+
+        }
     </script>
 </head>
 <body>
 <p>你喜欢哪个城市 </p>
-<ul id="city">
-    <li id="bj" name="Bejing">北京</li>
+<ul id="city"><li id="bj" name="Bejing">北京</li>
     <li>上海</li>
+    <li>东京</li>
     <li>首尔</li>
 </ul>
 

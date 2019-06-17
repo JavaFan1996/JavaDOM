@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script type="text/javascript">
+        //点击每个li节点都弹出其文本值
         window.onload = function () {
-            var nameNode = document.getElementById("nameid");
-            alert(nameNode.value);
-
-            nameNode.value="尚硅谷"
-
-
-
+            //1.获取所有li节点
+            var liNodes = document.getElementsByTagName("li");
+            //2.使用for循环遍历
+            for (var i = 0 ; i <liNodes.length;i++){
+                liNodes[i].onclick = function () {
+                    alert(this.firstChild.nodeValue);
+                }
+            }
 
                 }
+
+
     </script>
 </head>
 <body>
@@ -21,9 +25,9 @@
 <ul id="city">
     <li id="bj" name="Bejing">北京</li>
     <li>上海</li>
+    <li>东京</li>
     <li>首尔</li>
 </ul>
-
 
 
 <br><br>
